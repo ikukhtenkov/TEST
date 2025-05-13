@@ -1,10 +1,12 @@
 
-# Online Python - IDE, Editor, Compiler, Interpreter
+import random
 
-def sum(a, b):
-    return (a + b)
+greetings = [
+    "Приветствую тебя, {}!",
+    "Рад тебя видеть, {}!",
+    "{}! Как же ты мне нужен!",
+    "Наконец-то ты здесь, {}!",
+]
 
-a = int(input('Enter 1st number: '))
-b = int(input('Enter 2nd number: '))
-
-print(f'Sum of {a} and {b} is {sum(a, b)}')
+name = input("Твоё имя: ")
+print(random.choice(greetings).format(name))
