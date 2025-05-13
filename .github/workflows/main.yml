@@ -1,4 +1,4 @@
-name: Lint with flake8 (PEP8)
+name: flake8 (PEP8)
 
 on:
   push:
